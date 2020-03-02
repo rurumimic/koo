@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C97A1F3B240D40D000121407 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97A1F3A240D40D000121407 /* main.cpp */; };
+		C97A1F48240D41AE00121407 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97A1F47240D41AE00121407 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C97A1F35240D40D000121407 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C97A1F43240D41AE00121407 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		C97A1F37240D40D000121407 /* koo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = koo; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A1F3A240D40D000121407 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C97A1F45240D41AE00121407 /* TRAVERSAL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TRAVERSAL; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97A1F47240D41AE00121407 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C97A1F34240D40D000121407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97A1F42240D41AE00121407 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C97A1F39240D40D000121407 /* koo */,
+				C97A1F46240D41AE00121407 /* TRAVERSAL */,
 				C97A1F38240D40D000121407 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C97A1F37240D40D000121407 /* koo */,
+				C97A1F45240D41AE00121407 /* TRAVERSAL */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				C97A1F3A240D40D000121407 /* main.cpp */,
 			);
 			path = koo;
+			sourceTree = "<group>";
+		};
+		C97A1F46240D41AE00121407 /* TRAVERSAL */ = {
+			isa = PBXGroup;
+			children = (
+				C97A1F47240D41AE00121407 /* main.cpp */,
+			);
+			path = TRAVERSAL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = C97A1F37240D40D000121407 /* koo */;
 			productType = "com.apple.product-type.tool";
 		};
+		C97A1F44240D41AE00121407 /* TRAVERSAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97A1F49240D41AE00121407 /* Build configuration list for PBXNativeTarget "TRAVERSAL" */;
+			buildPhases = (
+				C97A1F41240D41AE00121407 /* Sources */,
+				C97A1F42240D41AE00121407 /* Frameworks */,
+				C97A1F43240D41AE00121407 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRAVERSAL;
+			productName = TRAVERSAL;
+			productReference = C97A1F45240D41AE00121407 /* TRAVERSAL */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = rurumimic;
 				TargetAttributes = {
 					C97A1F36240D40D000121407 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C97A1F44240D41AE00121407 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				C97A1F36240D40D000121407 /* koo */,
+				C97A1F44240D41AE00121407 /* TRAVERSAL */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97A1F3B240D40D000121407 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97A1F41240D41AE00121407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97A1F48240D41AE00121407 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +313,26 @@
 			};
 			name = Release;
 		};
+		C97A1F4A240D41AE00121407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65J2F745DV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C97A1F4B240D41AE00121407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65J2F745DV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +350,15 @@
 			buildConfigurations = (
 				C97A1F3F240D40D000121407 /* Debug */,
 				C97A1F40240D40D000121407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97A1F49240D41AE00121407 /* Build configuration list for PBXNativeTarget "TRAVERSAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97A1F4A240D41AE00121407 /* Debug */,
+				C97A1F4B240D41AE00121407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
